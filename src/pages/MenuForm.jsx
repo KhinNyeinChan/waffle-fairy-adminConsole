@@ -35,7 +35,7 @@ function MenuForm() {
 
         <div className="mt-4 flex items-center justify-between gap-3">
           <h1 className="text-[18px] font-medium text-[#19110f]">
-            {isEditMode ? 'Update Menu' : 'Create Menu'}
+            Menu
           </h1>
 
           <div className="flex items-center gap-2">

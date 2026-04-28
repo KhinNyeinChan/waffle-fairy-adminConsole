@@ -83,7 +83,7 @@ function Login() {
             />
 
             <Button
-              buttonName="List"
+              buttonName="Create New Account"
               onClick={() => navigate('/create-account')}
               className="text-[11px] text-[#7a706b] transition hover:text-[#5f524c]"
             />

@@ -9,6 +9,8 @@ import CategoryList from './pages/CategoryList.jsx'
 import CategoryForm from './pages/CategoryForm.jsx'
 import MenuList from './pages/MenuList.jsx'
 import MenuForm from './pages/MenuForm.jsx'
+import PromotionList from './pages/PromotionList.jsx'
+import OrderList from './pages/OrderList.jsx'
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/menus" element={<MenuList />} />
         <Route path="/menus/new" element={<MenuForm />} />
         <Route path="/menus/:menuId" element={<MenuForm />} />
+        <Route path="/promotions" element={<PromotionList />} />
+        <Route path="/orders" element={<OrderList />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

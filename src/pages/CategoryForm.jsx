@@ -31,7 +31,7 @@ function CategoryForm() {
 
         <div className="mt-4 flex items-center justify-between gap-3">
           <h1 className="text-[18px] font-medium text-[#19110f]">
-            {isEditMode ? 'Update Category' : 'Create Category'}
+            Category
           </h1>
 
           <div className="flex items-center gap-2">
@@ -83,7 +83,9 @@ function CategoryForm() {
             </label>
 
             <label className="flex h-10 items-center gap-2 rounded-md border border-[#ead7ce] bg-[#fdf3ef] px-3 text-sm sm:col-span-2">
-              <span className="text-[11px] font-medium text-[#6f200f]">Created date</span>
+              <span className="whitespace-nowrap text-[11px] font-medium text-[#6f200f]">
+                Created date
+              </span>
               <input
                 type="date"
                 defaultValue={category.createdDate}

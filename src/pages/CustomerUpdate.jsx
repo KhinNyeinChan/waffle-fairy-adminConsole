@@ -71,9 +71,7 @@ function CustomerUpdate() {
             </label>
 
             <label className="flex h-10 items-center gap-2 rounded-md border border-[#ead7ce] bg-[#fdf3ef] px-3 text-sm">
-              <span className="whitespace-nowrap text-[11px] font-medium text-[#6f200f]">
-                Ordered no
-              </span>
+              <span className="text-[11px] font-medium text-[#6f200f]">Status</span>
               <input
                 type="text"
                 className="w-full bg-transparent text-sm text-[#7a2f1f] focus:outline-none"
@@ -81,9 +79,11 @@ function CustomerUpdate() {
             </label>
 
             <label className="flex h-10 items-center gap-2 rounded-md border border-[#ead7ce] bg-[#fdf3ef] px-3 text-sm">
-              <span className="text-[11px] font-medium text-[#6f200f]">Status</span>
+              <span className="whitespace-nowrap text-[11px] font-medium text-[#6f200f]">
+                Created date
+              </span>
               <input
-                type="text"
+                type="date"
                 className="w-full bg-transparent text-sm text-[#7a2f1f] focus:outline-none"
               />
             </label>

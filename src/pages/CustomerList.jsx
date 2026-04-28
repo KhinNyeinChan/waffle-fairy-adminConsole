@@ -3,12 +3,12 @@ import Navbar from '../components/Navbar.jsx'
 import Topbar from '../components/Topbar.jsx'
 
 const customers = [
-  ['01', 'Name', 'Phone', 'Address', 'Ordered no', 'Status', '2026-04-10', '2026-04-20', 'Admin'],
-  ['02', 'Name', 'Phone', 'Address', 'Ordered no', 'Status', '2026-04-11', '2026-04-21', 'Admin'],
-  ['03', 'Name', 'Phone', 'Address', 'Ordered no', 'Status', '2026-04-12', '2026-04-22', 'Admin'],
-  ['04', 'Name', 'Phone', 'Address', 'Ordered no', 'Status', '2026-04-13', '2026-04-23', 'Admin'],
-  ['05', 'Name', 'Phone', 'Address', 'Ordered no', 'Status', '2026-04-14', '2026-04-24', 'Admin'],
-  ['06', 'Name', 'Phone', 'Address', 'Ordered no', 'Status', '2026-04-15', '2026-04-25', 'Admin'],
+  ['01', 'Name', 'Phone', 'Address', 'Status', '2026-04-10', '2026-04-20', 'Admin'],
+  ['02', 'Name', 'Phone', 'Address', 'Status', '2026-04-11', '2026-04-21', 'Admin'],
+  ['03', 'Name', 'Phone', 'Address', 'Status', '2026-04-12', '2026-04-22', 'Admin'],
+  ['04', 'Name', 'Phone', 'Address', 'Status', '2026-04-13', '2026-04-23', 'Admin'],
+  ['05', 'Name', 'Phone', 'Address', 'Status', '2026-04-14', '2026-04-24', 'Admin'],
+  ['06', 'Name', 'Phone', 'Address', 'Status', '2026-04-15', '2026-04-25', 'Admin'],
 ]
 
 function CustomerList() {
@@ -33,7 +33,6 @@ function CustomerList() {
                 <th className="border-b border-r border-[#8d4a3d] px-3 py-2 font-medium">Name</th>
                 <th className="border-b border-r border-[#8d4a3d] px-3 py-2 font-medium">Phone</th>
                 <th className="border-b border-r border-[#8d4a3d] px-3 py-2 font-medium">Address</th>
-                <th className="border-b border-r border-[#8d4a3d] px-3 py-2 font-medium">Ordered No.</th>
                 <th className="border-b border-r border-[#8d4a3d] px-3 py-2 font-medium">Status</th>
                 <th className="border-b border-r border-[#8d4a3d] px-3 py-2 font-medium">Created date</th>
                 <th className="border-b border-r border-[#8d4a3d] px-3 py-2 font-medium">Modified date</th>

@@ -89,9 +89,8 @@ function Navbar() {
     { label: 'Customer', icon: PeopleIcon, to: '/customers' },
     { label: 'Category', icon: GridIcon, to: '/categories' },
     { label: 'Menu', icon: MenuIcon, to: '/menus' },
-    { label: 'Promotion', icon: PromotionIcon },
-    { label: 'Order', icon: OrderIcon },
-    { label: 'Sale', icon: SaleIcon },
+    { label: 'Promotion', icon: PromotionIcon , to: '/promotions'},
+    { label: 'Order', icon: OrderIcon, to: '/orders' },
     { label: 'Setting', icon: SettingIcon },
   ]
 
