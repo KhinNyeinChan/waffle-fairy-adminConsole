@@ -1,5 +1,6 @@
 import loginLogo from '../assets/login-logo.svg'
-import { Link } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
+import Button from "../components/Button.jsx"
 
 function PhoneIcon() {
   return (
@@ -24,6 +25,13 @@ function LockIcon() {
 }
 
 function Login() {
+  const navigate = useNavigate()
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    navigate('/main')
+  }
+
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#fdfcf9] text-[#6b2a1f]">
       <div className="pointer-events-none absolute -left-24 -top-20 h-80 w-80 rounded-full bg-[#6f200f] blur-3xl sm:-left-16 sm:-top-14 sm:h-96 sm:w-96" />
@@ -43,7 +51,7 @@ function Login() {
             Login to your account
           </h1>
 
-          <form className="mt-9 flex w-full flex-col items-center gap-4">
+          <form className="mt-9 flex w-full flex-col items-center gap-4" onSubmit={handleSubmit}>
             <label className="flex h-10 w-[190px] items-center gap-2 rounded-lg bg-[#fce9e0] px-3 text-sm text-[#9b7f75] shadow-[0_1px_0_rgba(0,0,0,0.02)] sm:w-[230px]">
               <span className="text-[#6f200f]">
                 <PhoneIcon />
@@ -68,19 +76,17 @@ function Login() {
               />
             </label>
 
-            <button
+            <Button
+              buttonName="Login"
               type="submit"
               className="mt-6 h-8 w-[140px] rounded-md bg-[#772714] text-[12px] font-medium text-white shadow-[0_10px_20px_rgba(119,39,20,0.2)] transition hover:bg-[#6a2312] focus:outline-none focus:ring-2 focus:ring-[#b55a42]/40 focus:ring-offset-2 focus:ring-offset-transparent"
-            >
-              Log in
-            </button>
+            />
 
-            <Link
-              to="/create-account"
+            <Button
+              buttonName="List"
+              onClick={() => navigate('/create-account')}
               className="text-[11px] text-[#7a706b] transition hover:text-[#5f524c]"
-            >
-              Create new account
-            </Link>
+            />
           </form>
         </div>
       </section>

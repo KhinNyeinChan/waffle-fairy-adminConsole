@@ -34,7 +34,7 @@ function Loading() {
           <img
             src={loginLogo}
             alt="Waffle Fairy"
-            className="h-28 w-28 select-none rounded-full border-4 border-white object-cover shadow-[0_10px_30px_rgba(111,32,15,0.18)] sm:h-32 sm:w-32"
+            className="h-28 w-28 select-none rounded-full bg-[#f3c84f] object-cover shadow-[0_10px_30px_rgba(111,32,15,0.18)] sm:h-32 sm:w-32"
           />
 
           <p className="mt-5 text-[11px] font-bold leading-4 text-[#7a2f1f] sm:text-[12px]">
